@@ -2,6 +2,9 @@
 ![](https://cchao123.github.io/images/cchao2025/easy-puzzle.jpg)
 这是一个基于 Node.js 的图片拼图生成器，可以将一张图片分割成多个碎片，并支持将多张图片合并。
 
+## 在线使用
+https://linf04.github.io/easy-puzzle
+
 ## 功能特点
 - 支持多张图片合并（正片叠底模式）
 - 将图片分割成多个碎片,支持选择碎片数量（2-9张）
