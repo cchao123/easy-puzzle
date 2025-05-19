@@ -8,10 +8,21 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
       background-color: #f5f5f5;
+    }
+
+    .main-container {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .section {
+      flex: 1;
+      min-width: 0;
     }
 
     .container {
@@ -19,6 +30,7 @@
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      height: 100%;
     }
 
     .controls {
@@ -105,35 +117,39 @@
     </svg>
   </a>
   
-  <h1 style="margin-top: 30px" class="strikethrough">图片合并：</h1>
-  <div class="container">
-    <input type="file" id="mergeInput" multiple accept="image/*">
-    <button id="mergeBtn" type="button">合并图片（正片叠底）</button>
-    <div id="mergeResult"></div>
-  </div>
-
-  <h1 class="strikethrough">图片拆分</h1>
-  <div class="container">
-    <div class="controls">
-      <form id="puzzleForm">
-        <input type="file" id="imageInput" name="image" accept="image/*" required>
-        <br>
-        <label for="numPieces">碎片数量:</label>
-        <input type="range" id="numPieces" name="numPieces" min="2" max="9" value="5" step="1">
-        <span id="numPiecesValue">5</span>
-        <button type="submit">生成拆图</button>
-      </form>
-      <div class="loading" id="loading">处理中...</div>
+  <div class="main-container">
+    <div class="section">
+      <h1 style="margin-top: 30px" class="strikethrough">图片合并：</h1>
+      <div class="container">
+        <input type="file" id="mergeInput" multiple accept="image/*">
+        <button id="mergeBtn" type="button">合并图片（正片叠底）</button>
+        <div id="mergeResult"></div>
+      </div>
     </div>
-    <div class="preview">
-      <h3 class="strikethrough">原图预览：</h3>
-      <img id="originalImage" style="display: none;">
-      <h3 class="strikethrough">拼图碎片：</h3>
-      <div id="puzzleContainer"></div>
+
+    <div class="section">
+      <h1 class="strikethrough">图片拆分</h1>
+      <div class="container">
+        <div class="controls">
+          <form id="puzzleForm">
+            <input type="file" id="imageInput" name="image" accept="image/*" required>
+            <br>
+            <label for="numPieces">碎片数量:</label>
+            <input type="range" id="numPieces" name="numPieces" min="2" max="9" value="5" step="1">
+            <span id="numPiecesValue">5</span>
+            <button type="submit">生成拆图</button>
+          </form>
+          <div class="loading" id="loading">处理中...</div>
+        </div>
+        <div class="preview">
+          <h3 class="strikethrough">原图预览：</h3>
+          <img id="originalImage" style="display: none;">
+          <h3 class="strikethrough">拼图碎片：</h3>
+          <div id="puzzleContainer"></div>
+        </div>
+      </div>
     </div>
   </div>
-
-
 
   <script>
     document.getElementById('numPieces').addEventListener('input', function (e) {

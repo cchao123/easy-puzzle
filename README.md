@@ -2,8 +2,7 @@
   <img src="https://cchao123.github.io/images/cchao2025/WechatIMG3990.jpg" alt="合并" width="200">
 
 ## 截图展示
-  <img src="https://cchao123.github.io/images/cchao2025/WechatIMG4000.jpg" alt="合并" width="200">
-<img src="https://cchao123.github.io/images/cchao2025/WechatIMG3999.jpg" alt="拆分" width="200">
+  <img src="https://cchao123.github.io/images/cchao2025/WechatIMG4000.jpg" alt="合并" width="200"><img src="https://cchao123.github.io/images/cchao2025/WechatIMG3999.jpg" alt="拆分" width="200">
 
 
 <br />
