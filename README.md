@@ -1,3 +1,11 @@
+# 小程序已出炉
+  <img src="https://cchao123.github.io/images/cchao2025/WechatIMG3990.jpg" alt="合并" width="200">
+
+## 截图展示
+  <img src="https://cchao123.github.io/images/cchao2025/WechatIMG4000.jpg" alt="合并" width="200">
+  <img src="https://cchao123.github.io/images/cchao2025/WechatIMG3999.jpg" alt="拆分" width="200">
+
+
 # 图片拼图生成器
 ![](https://cchao123.github.io/images/cchao2025/easy-puzzle.jpg)
 这是一个基于 Node.js 的图片拼图生成器，可以将一张图片分割成多个碎片，并支持将多张图片合并。
@@ -51,25 +59,10 @@ npm run dev
 - 合并采用正片叠底模式，适合处理具有透明度的图片
 
 
-## 目录结构
-
-```
-.
-├── puzzle.js          # 主程序
-├── index.html         # 前端页面
-├── uploads/          # 临时上传文件目录
-├── puzzle_pieces/    # 生成的拼图碎片目录
-└── package.json      # 项目配置
-```
-
-### 打赏支持
-如果你觉得这个项目对你有帮助，可以请作者喝杯咖啡 ☕
-
-
-## 支持本项目
-如果你觉得这个项目对你有帮助，可以通过以下方式支持作者：
-
+<!-- ## 支持本项目
+如果你觉得这个项目对你有帮助，可以通过以下方式支持作者： -->
+<!-- 
 ### 一次性捐赠
 - 支付宝/微信扫码打赏：  
   <img src="https://cchao123.github.io/images/12300107/WechatIMG3953.jpg" alt="扫码打赏" width="200">
-  <img src="https://cchao123.github.io/images/12300107/WechatIMG3954.jpg" alt="扫码打赏" width="200">
+  <img src="https://cchao123.github.io/images/12300107/WechatIMG3954.jpg" alt="扫码打赏" width="200"> -->

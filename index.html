@@ -69,6 +69,10 @@
       display: none;
       margin: 10px 0;
     }
+
+    .strikethrough {
+      text-decoration: line-through;
+    }
   </style>
 
 <style>
@@ -101,14 +105,14 @@
     </svg>
   </a>
   
-  <h1 style="margin-top: 30px">图片合并：</h1>
+  <h1 style="margin-top: 30px" class="strikethrough">图片合并：</h1>
   <div class="container">
     <input type="file" id="mergeInput" multiple accept="image/*">
     <button id="mergeBtn" type="button">合并图片（正片叠底）</button>
     <div id="mergeResult"></div>
   </div>
 
-  <h1>图片拆分</h1>
+  <h1 class="strikethrough">图片拆分</h1>
   <div class="container">
     <div class="controls">
       <form id="puzzleForm">
@@ -122,9 +126,9 @@
       <div class="loading" id="loading">处理中...</div>
     </div>
     <div class="preview">
-      <h3>原图预览：</h3>
+      <h3 class="strikethrough">原图预览：</h3>
       <img id="originalImage" style="display: none;">
-      <h3>拼图碎片：</h3>
+      <h3 class="strikethrough">拼图碎片：</h3>
       <div id="puzzleContainer"></div>
     </div>
   </div>
